@@ -1,55 +1,92 @@
 🤖 Web Bot Detection System
 🚀 AI-Powered Human vs Bot Behavior Analysis
+<p align="center"> <b>Full-Stack Behavior Intelligence System for Real-Time Bot Detection</b> </p>
+📌 Overview
 
-A full-stack web bot detection system that analyzes user behavior (sessions, clicks, navigation patterns, timing, etc.) and uses a machine learning model to classify whether a user is a Human or a Bot in real time.
+A full-stack AI-powered web bot detection system that analyzes user behavior patterns such as:
 
-Built with FastAPI + ML + Web Dashboard, this project helps detect suspicious automated traffic and provides admin tools to analyze and block bots.
+Sessions
 
-✨ Features
+Click activity
 
-🔍 Behavior Tracking
+Navigation flow
 
-Tracks sessions, topics, page similarity, navigation patterns
+Page similarity
 
-Generates structured behavioral data per user
+Timing behavior
+
+The system uses a Machine Learning model to classify users as:
+
+🟢 Human
+🔴 Bot
+
+All predictions happen in real-time using a FastAPI backend.
+
+✨ Core Features
+🔍 Behavior Tracking Engine
+
+Tracks sessions & navigation patterns
+
+Computes page similarity & topic diversity
+
+Generates structured behavioral features per user
+
+Maintains consistent feature pipeline
 
 🧠 Machine Learning Model
 
-Trained on behavioral features
+Trained on engineered behavioral features
 
-Detects bots with high accuracy
+Uses Balanced Random Forest
 
-Balanced Random Forest model
+Handles imbalanced bot vs human data
+
+High accuracy bot detection
 
 📊 Admin Dashboard
 
-View all users
+View all registered users
 
-See bot prediction status
+See live prediction status
 
-Click Analyze button per user
+"Analyze" button per user
 
-Detailed behavior analytics page
+Dedicated analytics page per account
 
-🚫 Block Bot Accounts
+Visual behavior insights
 
-If prediction = BOT → show Block Button
+🚫 Smart Bot Blocking
 
-Instantly block suspicious accounts
+If prediction = BOT
+→ Block Button automatically appears
+
+Instantly restrict suspicious accounts
+
+Stored block status in database
 
 📁 Automatic CSV Logging
 
-Stores session data
+Logs session data automatically
 
-Used for training + debugging
+Used for:
 
-Ensures consistent feature pipeline
+Model training
+
+Debugging
+
+Feature consistency
+
+Ensures reproducible ML pipeline
 
 ⚡ Real-Time Prediction API
 
 FastAPI backend
 
-Sends user behavior → model → returns prediction
+Receives behavior data
+
+Runs model inference
+
+Returns classification instantly
 
 🏗️ Tech Stack
 🧠 Machine Learning
@@ -72,7 +109,7 @@ FastAPI
 
 Uvicorn
 
-Supabase (DB)
+Supabase (Database)
 
 Python
 
@@ -84,10 +121,31 @@ Tailwind CSS
 
 ShadCN UI
 
-ReactBits components
+ReactBits Components
 
 ☁️ Deployment
 
 GitHub
 
-Google Drive (model storage)
+Google Drive (Model Storage)
+
+🔄 System Flow
+
+User Behavior
+⬇
+Feature Engineering
+⬇
+Machine Learning Model
+⬇
+Prediction (Human / Bot)
+⬇
+Admin Dashboard Action
+
+🎯 Project Goal
+
+To build a scalable, AI-driven system that can:
+
+✔ Detect automated traffic
+✔ Protect web applications
+✔ Provide admin-level behavioral insights
+✔ Block malicious bot accounts in real time
