@@ -1,0 +1,19 @@
+project_id = "neuhbveiakakneyuuave"
+
+[functions.track]
+verify_jwt = false
+
+[functions.download-user-data]
+verify_jwt = false
+
+[functions.run-bot]
+verify_jwt = false
+
+[functions.delete-all-data]
+verify_jwt = false
+
+[functions.predict-user]
+verify_jwt = false
+
+[functions.block-user]
+verify_jwt = false
