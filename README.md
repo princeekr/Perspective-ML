@@ -1,73 +1,93 @@
-# Welcome to your Lovable project
+🤖 Web Bot Detection System
+🚀 AI-Powered Human vs Bot Behavior Analysis
 
-## Project info
+A full-stack web bot detection system that analyzes user behavior (sessions, clicks, navigation patterns, timing, etc.) and uses a machine learning model to classify whether a user is a Human or a Bot in real time.
 
-**URL**: https://lovable.dev/projects/7410f81b-8218-4f2d-bb32-1ba1f84eabb2
+Built with FastAPI + ML + Web Dashboard, this project helps detect suspicious automated traffic and provides admin tools to analyze and block bots.
 
-## How can I edit this code?
+✨ Features
 
-There are several ways of editing your application.
+🔍 Behavior Tracking
 
-**Use Lovable**
+Tracks sessions, topics, page similarity, navigation patterns
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7410f81b-8218-4f2d-bb32-1ba1f84eabb2) and start prompting.
+Generates structured behavioral data per user
 
-Changes made via Lovable will be committed automatically to this repo.
+🧠 Machine Learning Model
 
-**Use your preferred IDE**
+Trained on behavioral features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Detects bots with high accuracy
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Balanced Random Forest model
 
-Follow these steps:
+📊 Admin Dashboard
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+View all users
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+See bot prediction status
 
-# Step 3: Install the necessary dependencies.
-npm i
+Click Analyze button per user
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Detailed behavior analytics page
 
-**Edit a file directly in GitHub**
+🚫 Block Bot Accounts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+If prediction = BOT → show Block Button
 
-**Use GitHub Codespaces**
+Instantly block suspicious accounts
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+📁 Automatic CSV Logging
 
-## What technologies are used for this project?
+Stores session data
 
-This project is built with:
+Used for training + debugging
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Ensures consistent feature pipeline
 
-## How can I deploy this project?
+⚡ Real-Time Prediction API
 
-Simply open [Lovable](https://lovable.dev/projects/7410f81b-8218-4f2d-bb32-1ba1f84eabb2) and click on Share -> Publish.
+FastAPI backend
 
-## Can I connect a custom domain to my Lovable project?
+Sends user behavior → model → returns prediction
 
-Yes, you can!
+🏗️ Tech Stack
+🧠 Machine Learning
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Python
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+scikit-learn
+
+imbalanced-learn
+
+pandas
+
+numpy
+
+joblib
+
+🌐 Backend
+
+FastAPI
+
+Uvicorn
+
+Supabase (DB)
+
+Python
+
+💻 Frontend
+
+React
+
+Tailwind CSS
+
+ShadCN UI
+
+ReactBits components
+
+☁️ Deployment
+
+GitHub
+
+Google Drive (model storage)
