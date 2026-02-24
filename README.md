@@ -1,151 +1,137 @@
-🤖 Web Bot Detection System
-🚀 AI-Powered Human vs Bot Behavior Analysis
-<p align="center"> <b>Full-Stack Behavior Intelligence System for Real-Time Bot Detection</b> </p>
-📌 Overview
+# 🤖 Web Bot Detection System 🚀  
+### AI-Powered Human vs Bot Behavior Analysis
 
-A full-stack AI-powered web bot detection system that analyzes user behavior patterns such as:
+> **Full-Stack Behavior Intelligence System for Real-Time Bot Detection**
 
-Sessions
+---
 
-Click activity
+## 📌 Overview
 
-Navigation flow
+An AI-powered full-stack web bot detection system that analyzes real user behavior patterns and classifies traffic as **Human** or **Bot** in real time.
 
-Page similarity
+The system tracks multiple behavioral signals such as:
 
-Timing behavior
+- Sessions  
+- Click activity  
+- Navigation flow  
+- Page similarity  
+- Timing behavior  
 
-The system uses a Machine Learning model to classify users as:
+It then feeds these engineered features into a Machine Learning model to predict:
 
-🟢 Human
-🔴 Bot
+🟢 **Human**  
+🔴 **Bot**
 
-All predictions happen in real-time using a FastAPI backend.
+All predictions are processed instantly using a **FastAPI backend**.
 
-✨ Core Features
-🔍 Behavior Tracking Engine
+---
 
-Tracks sessions & navigation patterns
+## ✨ Core Features
 
-Computes page similarity & topic diversity
+### 🔍 Behavior Tracking Engine
+- Tracks sessions and navigation patterns  
+- Computes page similarity & topic diversity  
+- Generates structured behavioral features  
+- Maintains consistent feature pipeline  
+- Logs user activity for analysis  
 
-Generates structured behavioral features per user
+---
 
-Maintains consistent feature pipeline
+### 🧠 Machine Learning Model
+- Trained on engineered behavioral features  
+- Uses **Balanced Random Forest**  
+- Handles imbalanced Human vs Bot data  
+- High-accuracy bot detection  
+- Saved & loaded using `joblib`  
 
-🧠 Machine Learning Model
+---
 
-Trained on engineered behavioral features
+### 📊 Admin Dashboard
+- View all registered users  
+- See live prediction status  
+- **Analyze** button per user  
+- Dedicated analytics page per account  
+- Visual behavior insights  
 
-Uses Balanced Random Forest
+---
 
-Handles imbalanced bot vs human data
+### 🚫 Smart Bot Blocking
+- If prediction = **BOT** → Block button appears  
+- Instantly restrict suspicious accounts  
+- Block status stored in database  
+- Admin-controlled access management  
 
-High accuracy bot detection
+---
 
-📊 Admin Dashboard
+### 📁 Automatic CSV Logging
+- Logs session data automatically  
+- Used for:
+  - Model training  
+  - Debugging  
+  - Feature consistency  
+- Ensures reproducible ML pipeline  
 
-View all registered users
+---
 
-See live prediction status
+### ⚡ Real-Time Prediction API
+- FastAPI backend  
+- Receives behavior data  
+- Runs ML inference  
+- Returns classification instantly  
 
-"Analyze" button per user
+---
 
-Dedicated analytics page per account
+## 🏗️ Tech Stack
 
-Visual behavior insights
+### 🧠 Machine Learning
+- Python  
+- scikit-learn  
+- imbalanced-learn  
+- pandas  
+- numpy  
+- joblib  
 
-🚫 Smart Bot Blocking
+### 🌐 Backend
+- FastAPI  
+- Uvicorn  
+- Supabase (Database)  
+- Python  
 
-If prediction = BOT
-→ Block Button automatically appears
+### 💻 Frontend
+- React  
+- Tailwind CSS  
+- ReactBits Components  
 
-Instantly restrict suspicious accounts
+### ☁️ Deployment
+- GitHub  
+- Google Drive (Model Storage)  
+- Vercel (Frontend)  
+- Railway (Backend)
 
-Stored block status in database
+---
 
-📁 Automatic CSV Logging
+## 🎯 Project Goal
 
-Logs session data automatically
+Build a scalable AI-driven system that can:
 
-Used for:
+✔ Detect automated traffic  
+✔ Protect web applications  
+✔ Provide admin-level behavioral insights  
+✔ Block malicious bot accounts in real time  
 
-Model training
+---
 
-Debugging
+## 🚀 Future Improvements
+- Live session heatmaps  
+- IP reputation scoring  
+- Advanced anomaly detection  
+- Model auto-retraining pipeline  
+- Cloud deployment for scale  
 
-Feature consistency
+---
 
-Ensures reproducible ML pipeline
+## 👨‍💻 Author
+**Prince Kumar**  
+Full-Stack & ML Developer  
 
-⚡ Real-Time Prediction API
-
-FastAPI backend
-
-Receives behavior data
-
-Runs model inference
-
-Returns classification instantly
-
-🏗️ Tech Stack
-🧠 Machine Learning
-
-Python
-
-scikit-learn
-
-imbalanced-learn
-
-pandas
-
-numpy
-
-joblib
-
-🌐 Backend
-
-FastAPI
-
-Uvicorn
-
-Supabase (Database)
-
-Python
-
-💻 Frontend
-
-React
-
-Tailwind CSS
-
-ShadCN UI
-
-ReactBits Components
-
-☁️ Deployment
-
-GitHub
-
-Google Drive (Model Storage)
-
-🔄 System Flow
-
-User Behavior
-⬇
-Feature Engineering
-⬇
-Machine Learning Model
-⬇
-Prediction (Human / Bot)
-⬇
-Admin Dashboard Action
-
-🎯 Project Goal
-
-To build a scalable, AI-driven system that can:
-
-✔ Detect automated traffic
-✔ Protect web applications
-✔ Provide admin-level behavioral insights
-✔ Block malicious bot accounts in real time
+> Building intelligent systems that detect, analyze, and secure web platforms.
